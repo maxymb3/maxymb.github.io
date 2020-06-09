@@ -1,0 +1,245 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-image: url(../img/bg.png);
+}
+
+/* General */
+
+/* Header */
+header {
+	background-image: url(../img/bg-01.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 430px;
+	background-position-y: -230px;
+}
+
+#topbar {
+	width: 100%;
+	height: 50px;
+	background: rgba(0, 0, 0, 0.333);
+}
+
+ul {
+	display: flex;
+	padding-left: 215px;
+	align-items: center;
+}
+
+li {
+	display: block;
+	padding: 0;
+	color: #fff;
+	font-family: Arial;
+	text-transform: uppercase;
+	transition: background-color 0.4s ease;
+}
+
+li:hover {
+	background: tomato;
+}
+
+li > a {
+	display: block;
+	padding: 0 20px;
+	text-decoration: none;
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 90px;
+	font-size: 60px;
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+}
+
+.button,
+button {
+	display: block;
+	text-align: center;
+	width: 145px;
+	height: 35px;
+	line-height: 35px;
+	background: linear-gradient(-35deg, #e2077f, #e2070f);
+	text-decoration: none;
+	margin: 30px auto;
+}
+
+header > .container > .button {
+	margin: 65px auto;
+	width: 290px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.button a {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/* Tour */
+#tour {
+	background-color: #373737;
+}
+
+h2 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	padding: 40px;
+	font-size: 4rem;
+}
+#tour > .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.tour-card {
+	background-repeat: no-repeat;
+	color: #fff;
+	padding: 25px 30px;
+}
+
+.tour-card > p {
+	font-size: 1.2rem;
+	margin: 5px;
+}
+
+.tour-card > a {
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+h3 {
+	text-transform: uppercase;
+	padding-top: 40px;
+}
+
+.madrid {
+	background-image: url(../img/tour/madrid.jpg);
+}
+
+.turin {
+	background-image: url(../img/tour/turin.jpg);
+}
+
+.hamburg {
+	background-image: url(../img/tour/hamburg.jpg);
+}
+
+.krakow {
+	background-image: url(../img/tour/krakow.jpg);
+}
+
+/* Gallery */
+#gallery {
+	background-color: #373737;
+}
+
+#gallery > .container {
+	display: grid;
+	grid-template-columns: repeat(3, 300px);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 20px;
+	padding: 65px;
+	justify-content: center;
+}
+
+#gallery > .container > .photo {
+	width: 300px;
+}
+
+/* Subscribe */
+
+#subscribe {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 15px 25px;
+	background-image: url(../img/bg-02.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: -280px;
+	height: 414px;
+}
+
+#subscribe .container,
+footer .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#subscribe p {
+	display: block;
+	color: #fff;
+	font-size: 1.5rem;
+	margin: 30px;
+}
+
+#subscribe form {
+	display: flex;
+	align-items: baseline;
+}
+
+#subscribe form > input {
+	padding: 10px;
+	height: 44px;
+}
+
+#subscribe form > button {
+	display: inline-block;
+	margin: 10px;
+	border: 0;
+	padding: 5px;
+	height: auto;
+	font-size: 1.3rem;
+}
+/* Footer */
+    
+footer {
+	background-color: rgba(55, 55, 55, 0.83);
+	padding: 30px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container > .social {
+	margin: 10px 0;
+}
+
+.container > .copyright {
+	width: max-content;
+}
+
+i {
+	color: #fff;
+	margin: 5px;
+}
